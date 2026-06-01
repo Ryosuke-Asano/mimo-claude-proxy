@@ -1,0 +1,14 @@
+{
+  "name": "mimo-claude-proxy",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Minimal proxy to use Xiaomi MiMo models from Claude Code / Claude Desktop with web UI",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node proxy.mjs"
+  }
+}
