@@ -156,8 +156,8 @@ const DEFAULT_MODEL_MAP = {
   "claude-opus-4-5-20251101": "mimo-v2.5-pro",
 
   // Sonnet tier → MiMo flagship
-  "claude-sonnet-4-7":          "mimo-v2.5-pro",
-  "claude-sonnet-4-6":          "mimo-v2.5-pro",
+  "claude-sonnet-4-7":          "mimo-v2.5",
+  "claude-sonnet-4-6":          "mimo-v2.5",
   "claude-sonnet-4-5-20250929": "mimo-v2-pro",
 
   // Haiku tier → MiMo flash
