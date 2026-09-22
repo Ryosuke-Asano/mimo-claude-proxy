@@ -24,8 +24,8 @@ Claude Desktop
        │  Anthropic Messages API (model: claude-sonnet-4-6)
        ▼
   proxy.mjs (:3335)
-       │  ┌ model: claude-sonnet-4-6 → mimo-v2.5-pro
-       │  └ response: mimo-v2.5-pro → claude-sonnet-4-6
+       │  ┌ model: claude-sonnet-4-6 → mimo-v2.6-pro
+       │  └ response: mimo-v2.6-pro → claude-sonnet-4-6
        ▼
   MiMo Anthropic 互換エンドポイント
 ```
@@ -125,13 +125,13 @@ inferenceGatewayApiKey:  <MiMo API key (tp-xxxxx)>
 
 | Claude モデル名 | MiMo モデル | 説明 |
 |---|---|---|
-| `claude-opus-4-8` | `mimo-v2.5-pro` | 最新フラッグシップ |
-| `claude-opus-4-7` | `mimo-v2.5-pro` | 最新フラッグシップ |
-| `claude-opus-4-6` | `mimo-v2.5-pro` | 最新フラッグシップ |
-| `claude-sonnet-4-7` | `mimo-v2.5-pro` | 最新フラッグシップ |
-| `claude-sonnet-4-6` | `mimo-v2.5-pro` | 最新フラッグシップ |
-| `claude-sonnet-4-5-20250929` | `mimo-v2-pro` | 前世代フラッグシップ |
-| `claude-haiku-4-5-20251001` | `mimo-v2-flash` | 軽量高速モデル |
+| `claude-opus-4-8` | `mimo-v2.6-pro` | 最新フラッグシップ |
+| `claude-opus-4-7` | `mimo-v2.6-pro` | 最新フラッグシップ |
+| `claude-opus-4-6` | `mimo-v2.6-pro` | 最新フラッグシップ |
+| `claude-sonnet-4-7` | `mimo-v2.6-pro` | 最新フラッグシップ |
+| `claude-sonnet-4-6` | `mimo-v2.6-pro` | 最新フラッグシップ |
+| `claude-sonnet-4-5-20250929` | `mimo-v2.6-pro` | 最新フラッグシップ |
+| `claude-haiku-4-5-20251001` | `mimo-v2.6-flash` | 軽量高速モデル |
 
 Web UI または `~/.mimo-proxy/config.json` で変更可能。
 

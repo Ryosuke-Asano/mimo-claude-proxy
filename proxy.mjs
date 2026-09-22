@@ -150,25 +150,25 @@ function resolveBaseURL() {
 
 const DEFAULT_MODEL_MAP = {
   // Opus tier → MiMo flagship
-  "claude-opus-4-8":          "mimo-v2.5-pro",
-  "claude-opus-4-7":          "mimo-v2.5-pro",
-  "claude-opus-4-6":          "mimo-v2.5-pro",
-  "claude-opus-4-5-20251101": "mimo-v2.5-pro",
+  "claude-opus-4-8":          "mimo-v2.6-pro",
+  "claude-opus-4-7":          "mimo-v2.6-pro",
+  "claude-opus-4-6":          "mimo-v2.6-pro",
+  "claude-opus-4-5-20251101": "mimo-v2.6-pro",
 
   // Sonnet tier → MiMo flagship
-  "claude-sonnet-4-7":          "mimo-v2.5",
-  "claude-sonnet-4-6":          "mimo-v2.5",
-  "claude-sonnet-4-5-20250929": "mimo-v2-pro",
+  "claude-sonnet-4-7":          "mimo-v2.6-pro",
+  "claude-sonnet-4-6":          "mimo-v2.6-pro",
+  "claude-sonnet-4-5-20250929": "mimo-v2.6-pro",
 
   // Haiku tier → MiMo flash
-  "claude-haiku-4-5-20251001": "mimo-v2-flash",
+  "claude-haiku-4-5-20251001": "mimo-v2.6-flash",
 
   // Explicit MiMo aliases
-  "claude-mimo-v25-pro":  "mimo-v2.5-pro",
-  "claude-mimo-v25":      "mimo-v2.5",
-  "claude-mimo-v2-pro":   "mimo-v2-pro",
-  "claude-mimo-v2-omni":  "mimo-v2-omni",
-  "claude-mimo-v2-flash": "mimo-v2-flash",
+  "claude-mimo-v25-pro":  "mimo-v2.6-pro",
+  "claude-mimo-v25":      "mimo-v2.6-pro",
+  "claude-mimo-v2-pro":   "mimo-v2.6-pro",
+  "claude-mimo-v2-omni":  "mimo-v2.6-pro",
+  "claude-mimo-v2-flash": "mimo-v2.6-flash",
 };
 
 /** Merge defaults with user overrides from config */
@@ -184,11 +184,8 @@ function resolveModel(name) {
 
 // Available MiMo models for UI dropdowns
 const MIMO_MODELS = [
-  "mimo-v2.5-pro",
-  "mimo-v2.5",
-  "mimo-v2-pro",
-  "mimo-v2-omni",
-  "mimo-v2-flash",
+  "mimo-v2.6-pro",
+  "mimo-v2.6-flash",
 ];
 
 // ---------------------------------------------------------------------------
@@ -567,7 +564,7 @@ fetch('/api/config').then(r=>r.json()).then(d=>{
   const mmap=d.anthropicModelMap||{};
   populateSelect(mapOpus,MIMO_MODELS,mmap[CLAUDE_MAP.opus]||MIMO_MODELS[0]);
   populateSelect(mapSonnet,MIMO_MODELS,mmap[CLAUDE_MAP.sonnet]||MIMO_MODELS[0]);
-  populateSelect(mapHaiku,MIMO_MODELS,mmap[CLAUDE_MAP.haiku]||MIMO_MODELS[4]||MIMO_MODELS[0]);
+  populateSelect(mapHaiku,MIMO_MODELS,mmap[CLAUDE_MAP.haiku]||MIMO_MODELS[1]||MIMO_MODELS[0]);
   const baseUrl=d.upstream||'';
   document.getElementById('info').innerHTML=
     '<span class="dot on"></span>Running on port '+d.port+'<br>'+
